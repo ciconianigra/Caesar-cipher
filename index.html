@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Цезар шифър</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="content">
+		<h1>Цезар шифър</h1>
+		<form id="myForm">
+			<p>
+				<label for="offset" class="icon-user"> Въведете отстъп
+                <span class="required"></span>
+	            </label>			
+				<input type="text" name="offset" id="offset"><span id="valid"></span>
+			</p>
+			<p>
+				<label for="usermail" class="icon-envelope"> Въведете текст за шифриране
+		                <span class="required"></span>
+		            </label>
+				<textarea id="in"></textarea>
+			</p>
+			<p id="out"></p>
+			<p>
+				<label for="usersite" class="icon-link">Въведете текст за дешифриране</label>			
+				<textarea  id="out2"></textarea>
+			</p>
+			<p id="out3"></p>
+			<input type="button" onclick="myFunction()" value="Изчисти">
+		</form>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</div>
+</body>
+</html>
